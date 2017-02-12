@@ -32,7 +32,7 @@ function draw() {
   fill(150, 0, 0);
   ellipse(BX, BY, 50, 50);
   //bot
-  if (BX < width/2 && Pb < width-60 && Pb > 0) {
+  if (BX < width/2 && Pb > width-60 && Pb < 0) {
     if (Bot == 0) {
       Pb = BY - 30;
     } else {
