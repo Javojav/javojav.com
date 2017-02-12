@@ -16,7 +16,7 @@ function draw() {
   background(0);
   textSize(20);
   fill(255);
-  text("©Javi", width-55, height-10);
+  text("Â©Javi", width-55, height-10);
   //puntos
   textSize(100);
   fill(255);
@@ -80,7 +80,6 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
-    }
   }
   if (BX == width) {
     PtsA = PtsA + 1;
@@ -89,6 +88,5 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
-    }
   }
 }
