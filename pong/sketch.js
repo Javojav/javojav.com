@@ -39,6 +39,7 @@ function draw() {
   if (Pb > width-60) {
    Pb = width-62; 
   }
+  
   if (BX < width/2) {
     if (Bot == 0) {
       Pb = BY - 30;
