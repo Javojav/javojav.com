@@ -1,9 +1,8 @@
 var BY, BX, T, BDY, BDX;
 var Pb, Bot;
 var PtsA = 0, PtsB = 0;
-
 function setup() {
-  background(0);
+  background(0); 
   createCanvas(1080, 720);
   BY = height/2;
   BX = width/2;
@@ -17,28 +16,30 @@ function draw() {
   background(0);
   textSize(20);
   fill(255);
-  text("©Javi", width-60, height-10);
-
+  text("©Javi", width-55, height-10);
   //puntos
   textSize(100);
   fill(255);
   text(PtsA, width*0.25, height/2);
   text(PtsB, width*0.75, height/2);
-
   //jugadores
   fill(255);
   rect(width-15, mouseY, 15, 60);
   rect(0, Pb, 15, 60);
-
   //linea centro
   rect(width/2-5, 0, 10, height);
-
   //pelota
   fill(150, 0, 0);
   ellipse(BX, BY, 50, 50);
-
   //bot
-  if (BX < width/2 && Pb > 0 && Pb < width-60) {
+  if (Pb < 0) {
+   Pb = 1; 
+  }
+  
+  if (Pb > width-60) {
+   Pb = width-61; 
+  }
+  if (BX < width/2) {
     if (Bot == 0) {
       Pb = BY - 30;
     } else {
@@ -53,7 +54,6 @@ function draw() {
       }
     }
   }
-
   //direccion pelota
   if (BDX == 1) {
     BX = BX - 3;
@@ -61,33 +61,24 @@ function draw() {
   if (BDX == 2) {
     BX = BX +3;
   }
-
   //pelota arriba/abajo
   BY = BY - BDY;
-
-  //choque
+  //choque 
   if (BY < 25 || BY > height-25) {
     BDY = BDY * -1;
-  }
+  } 
   if (BX > width-25 && BY < mouseY + 60 && BY > mouseY) {
     BDX = 1;
     BDY = random(-7, 7);
     T = T -1
-    Bot = 1;
+      Bot = 1;
   }
   if (BX < 25 && BY < Pb + 60 && BY > Pb) {
     BDX = 2;
     T = T - 1;
     BDY = random(-7, 7);
     Bot = 1;
-    if (Pb < 0) {
-      Pb = 1;
-    }
-    if (Pb < width-60) {
-      Pb = width-59;
-    }
   }
-
   //reset
   if (BX == 0) {
     PtsB = PtsB + 1;
@@ -96,12 +87,6 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
-    if (Pb < 0) {
-      Pb = 1;
-    }
-    if (Pb > width-60) {
-      Pb = width-59;
-    }
   }
   if (BX == width) {
     PtsA = PtsA + 1;
@@ -110,11 +95,5 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
-    if (Pb < 0) {
-      Pb = 1;
-    }
-    if (Pb > width-60) {
-      Pb = width-59;
-    }
   }
 }
