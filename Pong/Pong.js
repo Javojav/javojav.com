@@ -32,7 +32,7 @@ function draw() {
   fill(150, 0, 0);
   ellipse(BX, BY, 50, 50);
   //bot
-  if (BX < width/2) {
+  if (BX < width/2 && Pb > 0 && Pb < width-60) {
     if (Bot == 0) {
       Pb = BY - 30;
     } else {
@@ -71,6 +71,12 @@ function draw() {
     T = T - 1;
     BDY = random(-7, 7);
     Bot = 1;
+        if (Pb < 0) {
+     Pb = 1;
+    }
+      if (Pb < width-60) {
+     Pb = width-59;
+    }
   }
   //reset
   if (BX == 0) {
@@ -88,5 +94,11 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
+    if (Pb < 0) {
+     Pb = 1;
+    }
+      if (Pb < width-60) {
+     Pb = width-59;
+    }
   }
 }
