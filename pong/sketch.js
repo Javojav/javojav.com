@@ -33,11 +33,11 @@ function draw() {
   ellipse(BX, BY, 50, 50);
   //bot
   if (Pb < 0) {
-   Pb = 1; 
+   Pb = 2; 
   }
   
   if (Pb > width-60) {
-   Pb = width-61; 
+   Pb = width-62; 
   }
   if (BX < width/2) {
     if (Bot == 0) {
