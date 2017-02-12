@@ -16,7 +16,8 @@ function draw() {
   background(0);
   textSize(20);
   fill(255);
-  text(Pb, width-55, height-10);
+  //text("©Javi", width-55, height-10);
+  text(Pb , width-55, height-10);
   //puntos
   textSize(100);
   fill(255);
