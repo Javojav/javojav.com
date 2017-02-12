@@ -95,10 +95,10 @@ function draw() {
     BDX = 2;
     T = random(1, 10);
     if (Pb < 1) {
-   Pb =  Pb + 2; 
+   Pb =  Pb + 5; 
     }
-      if (Pb > width) {
-   Pb =  Pb - 1;
+      if (Pb > width - 60) {
+   Pb =  Pb - 5;
     }
   }
 }
