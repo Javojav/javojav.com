@@ -80,6 +80,12 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
+        if (Pb < 1) {
+   Pb =  Pb + 1 
+    }
+      if (Pb > width) {
+   Pb =  Pb - 1 
+    }
   }
   if (BX == width) {
     PtsA = PtsA + 1;
@@ -88,5 +94,11 @@ function draw() {
     BDY = random(-7, 7);
     BDX = 2;
     T = random(1, 10);
+    if (Pb < 1) {
+   Pb =  Pb + 1 
+    }
+      if (Pb > width) {
+   Pb =  Pb - 1 
+    }
   }
 }
