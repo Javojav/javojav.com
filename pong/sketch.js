@@ -97,4 +97,5 @@ function draw() {
     BDX = 2;
     T = random(1, 10);
   }
+  Text(Pb,1,1);
 }
