@@ -1,6 +1,6 @@
 var X, Y, RightArm = 0, LeftArm = 0, Message = 0;
 function setup() {
-   createCanvas(window.innerWidth-10,window.innerHeight-10);
+   createCanvas(window.innerWidth-20,window.innerHeight-20);
   background(70, 70, 255);
   noStroke();
   fill(10, 255, 10);
@@ -73,6 +73,7 @@ function Bob(X, Y) {
 }
 
 function mouseDragged() {
+   createCanvas(window.innerWidth-20,window.innerHeight-20);
     background(70, 70, 255);
     noStroke();
     fill(10, 255, 10);
@@ -80,6 +81,7 @@ function mouseDragged() {
     Bob(mouseX, mouseY);
 }
 function keyPressed() {
+   createCanvas(window.innerWidth-20,window.innerHeight-20);
       if (key == 1) {
     RightArm = 0;
      background(70, 70, 255);
