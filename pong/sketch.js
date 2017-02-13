@@ -36,8 +36,8 @@ function draw() {
    Pb = 2; 
   }
   
-  if (Pb > width-60) {
-   Pb = width-62; 
+  if (Pb > height-60) {
+   Pb = height-62; 
   }
   
   if (BX < width/2) {
