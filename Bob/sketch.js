@@ -1,6 +1,6 @@
 var X, Y, RightArm = 0, LeftArm = 0, Message = 0;
 function setup() {
-   createCanvas(window.innerWidth,window.innerHeight);
+   createCanvas(window.innerWidth-50,window.innerHeight-50);
   background(70, 70, 255);
   noStroke();
   fill(10, 255, 10);
