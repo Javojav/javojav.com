@@ -53,10 +53,10 @@ function draw() {
       Pb = BY - 30;
     } else {
       if (Pb > BY) {
-        Pb = Pb - T + slider.value();
+        Pb = Pb - (T + slider.value());
       }
       if (Pb < BY) {
-        Pb = Pb + T + slider.value();
+        Pb = Pb + (T + slider.value());
       }
       if (Pb < BY + 30 && Pb > BY - 30) {
         Bot = 0;
