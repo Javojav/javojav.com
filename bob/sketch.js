@@ -131,5 +131,5 @@ function mouseDragged() {
   noStroke();
   fill(10, 255, 10);
   rect(0, height-10, width, 10);
-  bob(mouseX, mouseY);
+  Bob(mouseX, mouseY);
 }
