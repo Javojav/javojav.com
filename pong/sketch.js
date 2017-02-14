@@ -73,7 +73,9 @@ function draw() {
   }
 
   //pelota arriba/abajo
-  BY = BY - BDY;
+  if (slider.value() > 0) {
+    BY = BY - BDY;
+  }
 
   //choque
   if (BY < 25 || BY > height - 25) {
