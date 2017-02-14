@@ -128,4 +128,8 @@ function keyPressed() {
 }
   function mouseDragged() {
     Bob(mouseX, mouseY); 
+      background(70, 70, 255);
+  noStroke();
+  fill(10, 255, 10);
+  rect(0, height-10, width, 10;
   }
