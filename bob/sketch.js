@@ -13,8 +13,7 @@ function draw() {
   background(70, 70, 255);
   noStroke();
   fill(10, 255, 10);
-  rect(0, height-10, width, 10;
-  bob(mouseX, mouseY);
+  rect(0, height-10, width, 10);
 }
 
 function Bob(X, Y) {
@@ -126,4 +125,11 @@ function keyPressed() {
     rect(0, height-10, width, 10)
     Bob(mouseX, mouseY);
   }
+}
+function mouseDragged() {
+  background(70, 70, 255);
+  noStroke();
+  fill(10, 255, 10);
+  rect(0, height-10, width, 10);
+  bob(mouseX, mouseY);
 }
