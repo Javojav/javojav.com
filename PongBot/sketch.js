@@ -17,7 +17,7 @@ function setup() {
   a = createA(href = "/PongBot", "Bot");
   a = createA(href = "", " ");
   a.style("color", "white");
-  a = createA(href = "/Pong2P", "Pong");
+  a = createA(href = "/Pong2P", "2P");
   a.style("color", "purple");
 }
 
