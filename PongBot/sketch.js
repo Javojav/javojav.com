@@ -14,7 +14,7 @@ function setup() {
   Pb = height / 2 - 15;
   Pa = height / 2 - 15;
   slider = createSlider(0, 20, 3, 0, 3, 6, 10, 15, 20);
-  a = createA(href = "/PongBot", "Bot");
+  a = createA(href = "/pong", "Pong");
   a = createA(href = "", " ");
   a.style("color", "white");
   a = createA(href = "/Pong2P", "2P");
