@@ -13,7 +13,11 @@ function setup() {
   T = random(1, 10);
   Pb = height / 2 - 15;
   slider = createSlider(0, 20, 3, 0, 3, 6, 10,15,20);
-  a = createA(href="/PongBot","Bot");
+  a = createA(href = "/PongBot", "Bot");
+  a.style("color", "purple");
+  a = createA(href = "", " ");
+  a.style("color", "white");
+  a = createA(href = "/Pong2P", "Pong");
 }
 
 function draw() {
