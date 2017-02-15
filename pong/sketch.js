@@ -9,7 +9,7 @@ function setup() {
   BY = height / 2;
   BX = width / 2;
   BDY = random(-7, 7);
-  BDX = 2;
+  BDX = 1;
   T = random(1, 10);
   Pb = height / 2 - 15;
   slider = createSlider(0, 20, 3, 0, 3, 6, 10,15,20);
