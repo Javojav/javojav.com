@@ -108,7 +108,7 @@ function draw() {
     BY = height / 2;
     BX = width / 2;
     BDY = random(-7, 7);
-    BDX = 2;
+    BDX = 1;
     T = random(1, 10);
   }
 }
