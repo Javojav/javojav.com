@@ -35,10 +35,10 @@ function draw() {
   //jugadorB
   
     if (keyIsDown(UP_ARROW)) {
-    Pb = Pb - 10;
+    Pb = Pb - 13;
   }
   if (keyIsDown(DOWN_ARROW)) {
-    Pb = Pb + 10;
+    Pb = Pb + 13;
   }
 
   //jugadores
