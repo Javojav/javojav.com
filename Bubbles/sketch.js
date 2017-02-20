@@ -18,7 +18,6 @@ function draw() {
     B = 1;
     bubble.push(new Bubble());
   }
-  text(colors,100,100);
 }
 
 function keyPressed() {
