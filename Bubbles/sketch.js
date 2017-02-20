@@ -1,6 +1,7 @@
 var bubble = [],
   B = 75,
-  colors = 0;
+  colors = 0,
+  MoarBubbles = 0;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -14,9 +15,17 @@ function draw() {
     bubble[i].move();
   }
   B = B + 1;
-  if (B > 75) {
-    B = 1;
-    bubble.push(new Bubble());
+  if (MoarBubbles === 0) {
+    if (B > 75) {
+      B = 1;
+      bubble.push(new Bubble());
+    }
+  }
+  if (MoarBubbles === 1) {
+    if (B > 1) {
+      B = 1;
+      bubble.push(new Bubble());
+    }
   }
 }
 
@@ -25,7 +34,13 @@ function keyPressed() {
     colors = 0;
   }
   if (key == 2) {
-  colors = 1;
+    colors = 1;
+  }
+  if (key == 3) {
+    MoarBubbles = 1;
+  }
+  if (key == 4) {
+    MoarBubbles = 0;
   }
 }
 
