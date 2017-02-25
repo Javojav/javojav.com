@@ -36,6 +36,7 @@ function keyPressed() {
   }
   if (key == 2) {
     colors = 1;
+    fl = 1;
   }
   if (key == 3) {
     MoarBubbles = 1;
