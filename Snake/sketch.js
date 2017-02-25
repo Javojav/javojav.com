@@ -37,7 +37,7 @@ function draw() {
 function Head() {
   this.x = 0;
   this.y = 0;
-  this.len = 15;
+  this.len = 13;
   this.time = 0;
   this.speedX = 25;
   this.speedY = 0;
@@ -76,7 +76,7 @@ function Head() {
       bodyy.push(this.y);
       body.push(new Body());
       if (this.len > -1) {
-        this.len--;
+        this.len = this.len - 0.5;
       }
     }
   };
