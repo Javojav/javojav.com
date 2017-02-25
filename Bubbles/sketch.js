@@ -2,7 +2,8 @@ var bubble = [],
   B = 75,
   colors = 0,
   MoarBubbles = 0,
-  fl = 0;
+  fl = 0,
+  sk = 1;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -50,6 +51,12 @@ function keyPressed() {
   if (key == 6) {
     fl = 0;
   }
+  if (key == 7) {
+    sk = 1;
+  }
+  if (key == 8) {
+    sk = 0;
+  }
 }
 
 function Bubble() {
@@ -72,7 +79,12 @@ function Bubble() {
   };
 
   this.display = function() {
-    stroke(255);
+    if (sk === 0) {
+      stroke(255);
+    }
+    if (sk === 1) {
+      stroke(this.colorr, this.colorg, this.colorb);
+    }
     if (fl === 1) {
       fill(this.colorr, this.colorg, this.colorb, 50);
     }
