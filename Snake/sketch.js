@@ -99,8 +99,6 @@ function Head() {
     }
 
     if (this.time > this.len) {
-      this.x = this.x + this.speedX;
-      this.y = this.y + this.speedY;
           //stop
       if (this.x > width || this.x < 0) {
         stop = 1;
@@ -114,6 +112,8 @@ function Head() {
         }
       }
       //stop
+      this.x = this.x + this.speedX;
+      this.y = this.y + this.speedY;
       this.time = 0;
       bodyx.push(this.x);
       bodyy.push(this.y);
