@@ -72,10 +72,10 @@ function Bubble() {
 
   this.display = function() {
     stroke(255);
-    if (fl == 1) {
+    if (fl === 1) {
       fill(this.colorr, this.colorg, this.colorb, 50);
     }
-    if (fl == 0) {
+    if (fl === 0) {
       noFill();
     }
     ellipse(this.x, this.y, 50, 50);
