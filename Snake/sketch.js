@@ -16,10 +16,10 @@ function draw() {
   if (stop == 0) {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
+      head[i].move();
       if (stop == 1) {
         background(0);
       }
-      head[i].move();
       head[0].food();
     }
   }
