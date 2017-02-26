@@ -9,10 +9,10 @@ function setup() {
   createCanvas(750, 750);
   background(0);
   px = width / 2;
-  for (var i = 0; i < 9 * 7; i++) {
+  for (var i = 0; i < 9 * 8; i++) {
     alien.push(new Alien());
   }
-  for (var y = 1; y < 8; y++) {
+  for (var y = 1; y < 9; y++) {
     for (var x = 1; x < 10; x++) {
       alien[a].pos(x * 75, y * 75);
       a++
@@ -135,10 +135,10 @@ function reset() {
   px = width / 2;
   a = 0;
   level++;
-  for (var i = 0; i < 9 * 7; i++) {
+  for (var i = 0; i < 9 * 8; i++) {
     alien.push(new Alien());
   }
-  for (var y = 1; y < 8; y++) {
+  for (var y = 1; y < 9; y++) {
     for (var x = 1; x < 10; x++) {
       alien[a].pos(x * 75, y * 75);
       a++
@@ -150,4 +150,8 @@ function keyPressed() {
   if (keyCode === 32 && shot.length < 3) {
     shot.push(new Shot())
   }
+}
+
+function mousePressed() {
+  alien.splice(0,15);
 }
