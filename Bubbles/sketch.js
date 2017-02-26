@@ -15,6 +15,9 @@ function draw() {
   for (var i = 0; i < bubble.length; i++) {
     bubble[i].display();
     bubble[i].move();
+    if (bubble[i].y < -25) {
+      bubble.splice(i, 1);
+    }
   }
   B = B + 1;
   if (MoarBubbles === 0) {
@@ -60,7 +63,7 @@ function keyPressed() {
 
 function Bubble() {
   this.x = random(width);
-  this.y = height + 50;
+  this.y = height + 25;
   if (colors === 1) {
     this.colorr = random(255);
     this.colorg = random(255);
