@@ -16,12 +16,12 @@ function draw() {
   if (stop == 0) {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
+      if (stop == 1) {
+        background(0);
+      }
       head[i].move();
       head[0].food();
     }
-  }
-  if (stop == 1) {
-    background(0);
   }
   if (stop == 0) {
     for (var l = 0; l < body.length; l++) {
