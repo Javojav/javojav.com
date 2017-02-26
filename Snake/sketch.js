@@ -21,6 +21,9 @@ function draw() {
       head[0].food();
     }
   }
+  if (stop == 1) {
+
+  }
   if (stop == 0) {
     for (var l = 0; l < body.length; l++) {
       body[l].display();
@@ -29,9 +32,6 @@ function draw() {
   textSize(20);
   fill(255);
   text("©Javi", width - 55, height - 10);
-  if (stop == 1) {
-
-  }
 }
 
 function Head() {
