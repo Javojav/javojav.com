@@ -17,9 +17,6 @@ function draw() {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
       head[i].move();
-      if (stop == 1) {
-        background(0);
-      }
       head[0].food();
     }
   }
@@ -101,10 +98,10 @@ function Head() {
       this.x = this.x + this.speedX;
       this.y = this.y + this.speedY;
       //stop
-      if (this.x > width || this.x < 0) {
+      if (this.x > width - 25 || this.x < 0) {
         stop = 1;
       }
-      if (this.y > height || this.y < 0) {
+      if (this.y > height - 25 || this.y < 0) {
         stop = 1;
       }
       for (var c = 0; c < bodyx.length - 1; c++) {
