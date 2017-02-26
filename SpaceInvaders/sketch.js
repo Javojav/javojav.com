@@ -151,7 +151,3 @@ function keyPressed() {
     shot.push(new Shot())
   }
 }
-
-function mousePressed() {
-  alien.splice(0,15);
-}
