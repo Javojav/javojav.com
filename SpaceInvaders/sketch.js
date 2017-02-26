@@ -36,7 +36,7 @@ function draw() {
       shot[i].display();
       shot[i].move();
       shot[i].hit();
-      if (shot[i].y < 0) {
+      if (shot[i].y < 0 || shot[i].hit == 1) {
         shot.splice(i, 1);
       }
     }
@@ -103,6 +103,7 @@ function Shot() {
   this.x = px + 25;
   this.y = height - 35;
   this.s = 1;
+  this.hit = 0;
   this.display = function() {
     if (this.s == 1) {
       fill(255, 0, 0);
@@ -118,8 +119,10 @@ function Shot() {
         if (this.y > alien[q].y - 25 && this.y < alien[q].y + 25 && this.x > alien[q].x - 25 && this.x < alien[q].x + 25) {
           if (alien[q].dam == 1) {
             alien.splice(q, 1);
+            this.hit = 1;
           } else {
             alien[q].dam++;
+            this.hit = 1;
           }
           this.s = 0;
         }
