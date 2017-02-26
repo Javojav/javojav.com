@@ -16,7 +16,6 @@ function draw() {
   if (stop == 0) {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
-      head[0].reset;
       head[i].move();
       head[0].food();
     }
