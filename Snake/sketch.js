@@ -34,6 +34,7 @@ function Head() {
   this.x = 0;
   this.y = 0;
   this.len = 10;
+  this.del = 10;
   this.time = 0;
   this.speedX = 25;
   this.speedY = 0;
@@ -77,22 +78,27 @@ function Head() {
     }
   };
   this.move = function() {
-    if (keyIsDown(UP_ARROW) && this.speedY == 0) {
+    if (keyIsDown(UP_ARROW) && this.speedY == 0 && this.del > this.len) {
       this.speedX = 0;
       this.speedY = -25;
+      this.del = 0;
     }
-    if (keyIsDown(DOWN_ARROW) && this.speedY == 0) {
+    if (keyIsDown(DOWN_ARROW) && this.speedY == 0 && this.del > this.len) {
       this.speedX = 0;
       this.speedY = 25;
+      this.del = 0;
     }
-    if (keyIsDown(LEFT_ARROW) && this.speedX == 0) {
+    if (keyIsDown(LEFT_ARROW) && this.speedX == 0 && this.del > this.len) {
       this.speedX = -25;
       this.speedY = 0;
+      this.del = 0;
     }
-    if (keyIsDown(RIGHT_ARROW) && this.speedX == 0) {
+    if (keyIsDown(RIGHT_ARROW) && this.speedX == 0 && this.del > this.len) {
       this.speedX = 25;
       this.speedY = 0;
+      this.del = 0;
     }
+    this.del++;
 
     if (this.time > this.len) {
       this.x = this.x + this.speedX;
