@@ -76,7 +76,7 @@ function Brick() {
         brick.splice(q, 1);
         ball[0].diry = ball[0].diry * (-1) + 1;
         ball[0].dirx = ball[0].dirx * (-1) + 1;
-        break();
+        break;
       }
     }
   };
