@@ -123,8 +123,8 @@ function Player() {
 }
 
 function Ball() {
-  this.dirx = random(-5, 5);
-  this.diry = random(5);
+  this.dirx = random(-3, 3);
+  this.diry = random(3);
   this.display = function() {
     fill(255);
     ellipse(bx, by, 15, 15);
@@ -135,17 +135,17 @@ function Ball() {
   };
   this.hit = function() {
     if (bx > width - 7) {
-      this.dirx = random(-5, 2);
+      this.dirx = random(-3, 1);
     }
     if (bx < 7) {
-      this.dirx = random(2, 5);
+      this.dirx = random(1, 3);
     }
     if (by < 7) {
-      this.diry = random(2, 5);
+      this.diry = random(1, 3);
     }
     if (bx < x + 80 && bx > x && by > y && by < y + 15) {
-      this.diry = random(-5, -2);
-      this.dirx = random(-5, 5);
+      this.diry = random(-3, -1);
+      this.dirx = random(-3, 3);
       while (by < y) {
         y--;
       }
