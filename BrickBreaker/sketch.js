@@ -72,7 +72,7 @@ function Brick() {
   };
   this.hit = function() {
     for (var q = brick.length - 1; q > -1; q--) {
-      if (bx > brick[q].x && bx < brick[q].x + 60 && by > brick[q].y && by < brick[q].y + 20) {
+      if (bx > brick[q].x - 7 && bx < brick[q].x + 67 && by > brick[q].y - 7 && by < brick[q].y + 27) {
         brick.splice(q, 1);
         ball[0].diry = ball[0].diry * (-1) + 1;
         ball[0].dirx = ball[0].dirx * (-1) + 1;
