@@ -1,6 +1,5 @@
 var bubble = [],
-  B = 75,
-  colors = 0,
+  B = 75;
   MoarBubbles = 0,
   fl = 0,
   sk = 1;
@@ -41,10 +40,10 @@ function draw() {
 
 function keyPressed() {
   if (key == 1) {
-    colors = 0;
+    sk = 0;
   }
   if (key == 2) {
-    colors = 1;
+    sk = 1;
   }
   if (key == 3) {
     MoarBubbles = 1;
@@ -59,28 +58,18 @@ function keyPressed() {
     fl = 0;
   }
   if (key == 7) {
-    sk = 1;
+    saveFrames("out", "png", 1, 1);
   }
-  if (key == 8) {
-    sk = 0;
-  }
-  
 }
 
 function Bubble() {
   this.g = random(20, 75);
   this.x = random(width);
   this.y = height + 25;
-  if (colors === 1) {
     this.colorr = random(255);
     this.colorg = random(255);
     this.colorb = random(255);
-  }
-  if (colors === 0) {
-    this.colorr = 255;
-    this.colorg = 255;
-    this.colorb = 255;
-  }
+
 
   this.move = function() {
     this.y = this.y - 0.5;
