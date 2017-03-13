@@ -4,6 +4,10 @@ var bubble = [],
   MoarBubbles = 0,
   fl = 0,
   sk = 1;
+ 
+function windowResized() {
+  resizeCanvas(window.innerWidth, window.innerHeight);
+}
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -13,15 +17,16 @@ function setup() {
 function draw() {
   background(0);
   for (var i = 0; i < bubble.length; i++) {
+    var j = i;
     bubble[i].display();
     bubble[i].move();
-    if (bubble[i].y < -25) {
+    if (bubble[i].y < -25 || bubble[i].x > width + 25 || bubble[i].y > height + 25) {
       bubble.splice(i, 1);
     }
   }
   B = B + 1;
   if (MoarBubbles === 0) {
-    if (B > 75) {
+    if (B > 50) {
       B = 1;
       bubble.push(new Bubble());
     }
@@ -59,9 +64,11 @@ function keyPressed() {
   if (key == 8) {
     sk = 0;
   }
+  
 }
 
 function Bubble() {
+  this.g = random(20, 75);
   this.x = random(width);
   this.y = height + 25;
   if (colors === 1) {
@@ -93,6 +100,6 @@ function Bubble() {
     if (fl === 0) {
       noFill();
     }
-    ellipse(this.x, this.y, 50, 50);
+    ellipse(this.x, this.y, this.g, this.g);
   };
 }
