@@ -2,7 +2,7 @@ var bubble = [],
   B = 75;
   MoarBubbles = 0,
   fl = 0,
-  sk = 1;
+  sk = 0;
  
 function windowResized() {
   resizeCanvas(window.innerWidth, window.innerHeight);
