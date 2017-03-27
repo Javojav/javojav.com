@@ -42,7 +42,7 @@ function draw() {
     }
     diry = 0;
   } else {
-    background(0);
+    button();
   }
 }
 
