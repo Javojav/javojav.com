@@ -12,12 +12,11 @@ function button() {
 }
 
 function reset() {
-  head = [],
-  body = [],
-  bodyx = [],
-  bodyy = [],
+  head = [];
+  body = [];
+  bodyx = [];
+  bodyy = [];
   stop = 0;
   head.push(new Head());
   body.push(new Body());
-  stop = 0;
 }
