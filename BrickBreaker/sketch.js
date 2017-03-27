@@ -48,20 +48,22 @@ function draw() {
     layout2(r);
   }
   background(100);
-  for (var a = 0; a < player.length; a++) {
-    player[a].display();
-  }
-  for (var b = 0; b < ball.length; b++) {
-    ball[b].display();
-    ball[b].move();
-    ball[b].hit();
-  }
-  for (var i = brick.length - 1; i > -1; i--) {
-    brick[i].display();
-    brick[i].hit();
+  if (stop == 0) {
+    for (var a = 0; a < player.length; a++) {
+      player[a].display();
+    }
+    for (var b = 0; b < ball.length; b++) {
+      ball[b].display();
+      ball[b].move();
+      ball[b].hit();
+    }
+    for (var i = brick.length - 1; i > -1; i--) {
+      brick[i].display();
+      brick[i].hit();
+    }
   }
   if (stop === 1) {
-    background(0);
+    button();
   }
 }
 
