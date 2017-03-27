@@ -41,9 +41,8 @@ function draw() {
       }
     }
     diry = 0;
-  } else {
-    button();
-  }
+  } 
+  if (stop == 1) button();
 }
 
 function player() {
