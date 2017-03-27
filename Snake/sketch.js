@@ -25,6 +25,7 @@ function draw() {
       body[l].display();
     }
   }
+  if (stop == 1) button();
   textSize(20);
   fill(255);
   text("©Javi", width - 55, height - 10);
