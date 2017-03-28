@@ -48,9 +48,6 @@ function draw() {
     layout2(r);
   }
   background(100);
-  textSize(20);
-  fill(255);
-  text("©Javi", width - 55, height - 10);
   if (stop == 0) {
     for (var a = 0; a < player.length; a++) {
       player[a].display();
@@ -68,6 +65,9 @@ function draw() {
   if (stop === 1) {
     button();
   }
+  textSize(20);
+  fill(255);
+  text("©Javi", width - 55, height - 10);
 }
 
 function Brick() {
