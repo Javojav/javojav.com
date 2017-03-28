@@ -22,6 +22,9 @@ function setup() {
 
 function draw() {
   background(0);
+  textSize(20);
+  fill(255);
+  text("©Javi", width - 55, height - 10);
   if (alien.length < 1) {
     reset();
   }
