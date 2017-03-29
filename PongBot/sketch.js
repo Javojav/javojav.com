@@ -16,8 +16,6 @@ function setup() {
   slider = createSlider(0, 20, 3, 0, 3, 6, 10, 15, 20);
   a = createA(href = "/pong", "Pong");
   a.style("font-family", "'Rajdhani', sans-serif");
-  a = createA(href = "", " ");
-  a.style("background-color", "white");
   a = createA(href = "/Pong2P", "2P");
   a.style("background-color", "blue");
   a.style("font-family", "'Rajdhani', sans-serif");
