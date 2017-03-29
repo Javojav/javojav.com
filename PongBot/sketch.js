@@ -17,9 +17,9 @@ function setup() {
   a = createA(href = "/pong", "Pong");
   a.style("font-family", "'Rajdhani', sans-serif");
   a = createA(href = "", " ");
-  a.style("color", "white");
+  a.style("background-color", "white");
   a = createA(href = "/Pong2P", "2P");
-  a.style("color", "blue");
+  a.style("background-color", "blue");
   a.style("font-family", "'Rajdhani', sans-serif");
 }
 
