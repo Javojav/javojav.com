@@ -16,8 +16,6 @@ function setup() {
   a = createA(href = "/PongBot", "Bot");
   a.style("background-color", "purple");
   a.style("font-family", "'Rajdhani', sans-serif");
-  a = createA(href = "", " ");
-  a.style("background-color", "white");
   a = createA(href = "/pong", "Pong");
   a.style("font-family", "'Rajdhani', sans-serif");
 }
