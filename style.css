@@ -6,7 +6,7 @@ h1 {
 	font-weight: 300;
 }
 
-a:active {
+a:hover {
 	position: relative;
 	top: 4px;
 	box-shadow: 0px 4px 0px black;
