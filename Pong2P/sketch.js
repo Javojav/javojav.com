@@ -14,10 +14,10 @@ function setup() {
   Pb = height / 2 - 15;
   slider = createSlider(0, 20, 3, 0, 3, 6, 10, 15, 20);
   a = createA(href = "/PongBot", "Bot");
-  a.style("color", "purple");
+  a.style("background-color", "purple");
   a.style("font-family", "'Rajdhani', sans-serif");
   a = createA(href = "", " ");
-  a.style("color", "white");
+  a.style("background-color", "white");
   a = createA(href = "/pong", "Pong");
   a.style("font-family", "'Rajdhani', sans-serif");
 }
