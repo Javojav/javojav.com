@@ -23,7 +23,6 @@ a {
 	margin: 10px 10px 10px 10px;
 }
 .cp {
-	position: absolute;
 	position: fixed;
 	bottom: 8px;
 	text-align: center;
