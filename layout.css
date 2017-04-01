@@ -1,0 +1,52 @@
+span.button {
+	position: absolute;
+	top: 10;
+	left: 10;
+	border-radius: 50%;
+	width: 0px;
+	height: 0px;
+	background-color: white;
+}
+
+div.activeblock {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+div.activeblock:hover + span.button,
+span.button:hover {
+	position: absolute;
+	top: 10;
+	left: 10;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	background-color: gray;
+}
+
+span.button:active + div.show {
+	border-radius: 0%;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	width: 200px;
+	height: 90%;
+	background-color: gray;
+	display: block;
+}
+
+div.show {
+	display: none;
+}
+
+div.show:hover {
+	border-radius: 0%;
+	position: absolute;
+	top: 2%;
+	left: 0;
+	width: 200px;
+	height: 90%;
+	background-color: gray;
+	display: block;
+}
