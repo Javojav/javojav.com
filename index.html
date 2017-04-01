@@ -9,8 +9,12 @@
 
 	<script src="libraries/p5.dom.js" type="text/javascript"></script>
 	<link href="style.css" rel="stylesheet">
-	<script src="sketch.js" type="text/javascript"></script>
-
+	<script type="text/javascript">
+		function setup() {
+			var P = "©Javi " + year();
+			document.getElementById("c").innerHTML = P;
+		}
+	</script>
 </head>
 
 <body style="background-color:darkblue;">
@@ -29,6 +33,7 @@
 		<p></p>
 		<a style="background-color: #E1CA00;" href="/Bubbles">Bubbles</a>
 	</div>
+	<div id="c" class="cp"></div>
 </body>
 
 </html>
