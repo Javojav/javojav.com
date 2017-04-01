@@ -28,7 +28,7 @@ span.button:hover {
 span.button:active + div.show {
 	border-radius: 0%;
 	position: absolute;
-	top: 2%;
+	top: 10px;
 	left: 0;
 	width: 200px;
 	height: 90%;
