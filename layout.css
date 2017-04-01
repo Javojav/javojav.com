@@ -1,6 +1,6 @@
 span.button {
 	position: absolute;
-	top: 2%;
+	top: 10;
 	left: 10;
 	border-radius: 50%;
 	width: 0px;
@@ -28,7 +28,7 @@ span.button:hover {
 span.button:active + div.show {
 	border-radius: 0%;
 	position: absolute;
-	top: 10px;
+	top: 10;
 	left: 0;
 	width: 200px;
 	height: 90%;
@@ -43,7 +43,7 @@ div.show {
 div.show:hover {
 	border-radius: 0%;
 	position: absolute;
-	top: 2%;
+	top: 10;
 	left: 0;
 	width: 200px;
 	height: 90%;
