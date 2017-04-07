@@ -13,6 +13,11 @@ function setup() {
 
 function draw() {
   background(0);
+  if (body.length < 2) {
+		bodyx.push(head[0].x);
+		bodyy.push(head[0].y);
+		body.push(new Body());
+	}
   if (stop == 0) {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
@@ -59,7 +64,7 @@ function Head() {
     fill(255, 0, 0);
     rect(this.foodX * 25, this.foodY * 25, 25, 25);
     //eat
-    if (this.foodX * 25 == this.x && this.foodY * 25 == this.y || body.length < 2) {
+    if (this.foodX * 25 == this.x && this.foodY * 25 == this.y) {
       this.foodX = random(width / 25);
       this.foodY = random(height / 25);
       this.foodX = round(this.foodX);
