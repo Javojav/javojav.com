@@ -7,9 +7,9 @@ var head = [],
 function setup() {
   createCanvas(600, 600);
   background(0);
+  head.push(new Head());
   bodyx.push(head[0].x);
   bodyy.push(head[0].y);
-  head.push(new Head());
   body.push(new Body());
 }
 
