@@ -7,17 +7,14 @@ var head = [],
 function setup() {
   createCanvas(600, 600);
   background(0);
+	bodyx.push(head[0].x);
+	bodyy.push(head[0].y);
   head.push(new Head());
   body.push(new Body());
 }
 
 function draw() {
   background(0);
-  if (body.length < 2) {
-		bodyx.push(head[0].x);
-		bodyy.push(head[0].y);
-		body.push(new Body());
-	}
   if (stop == 0) {
     for (var i = 0; i < head.length; i++) {
       head[i].display();
