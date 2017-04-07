@@ -59,7 +59,7 @@ function Head() {
     fill(255, 0, 0);
     rect(this.foodX * 25, this.foodY * 25, 25, 25);
     //eat
-    if (this.foodX * 25 == this.x && this.foodY * 25 == this.y) {
+    if (this.foodX * 25 == this.x && this.foodY * 25 == this.y || body.length < 2)) {
       this.foodX = random(width / 25);
       this.foodY = random(height / 25);
       this.foodX = round(this.foodX);
