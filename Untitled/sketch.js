@@ -285,7 +285,6 @@ function player(px, py) {
 		fill(0);
 		rect(px - 8, py + 18, 16, 20);
 		strokeWeight(3);
-		line(px - 12, py + 23, px - 12, py + 23);
 		line(px - 5, py + 39, px - 5, py + 45 + a);
 		line(px + 5, py + 39, px + 5, py + 45 + b);
 		strokeWeight(1);
