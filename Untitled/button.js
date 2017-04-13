@@ -20,12 +20,15 @@ function reset() {
 		plus = true,
 		shot = [],
 		zombie = [],
+		howmanybosses = 0,
 		look = 1,
 		level = 0,
-		stop = false,
+		vida = 3,
 		wait = 101,
 		reloadx = 23,
 		reloady = 20,
+		invencible = 255,
+		boss = [],
 		auto = 30;
 	ammo = {
 			ingun: 8,
