@@ -9,7 +9,7 @@ void setup() {
   Habt_ihr_hier = loadImage("habt_ihr_hier.png");
   die_Anlage = loadImage("die_Anlage.png");
   Manipuliert = new SoundFile(this, "Manipuliert.mp3");
-  Manipuliert.play();
+  Manipuliert.loop();
   noCursor();
 }      
 
