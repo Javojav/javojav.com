@@ -10,6 +10,7 @@ void setup() {
   die_Anlage = loadImage("die_Anlage.png");
   Manipuliert = new SoundFile(this, "Manipuliert.mp3");
   Manipuliert.play();
+  noCursor();
 }      
 
 
