@@ -10,7 +10,7 @@ span.button {
 
 div.activeblock {
 	position: fixed;
-	top:1%;
+	top: 1%;
 	width: 100px;
 	height: 100px;
 }
@@ -51,4 +51,15 @@ div.show:hover {
 	background-color: gray;
 	display: block;
 }
+
+body {
+	background-color: #1C1F32;
+}
+
+canvas {
+	margin: auto;
+	display: block;
+}
+
+
 /* ©Javi */
