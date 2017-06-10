@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans+Mono');
+.movil {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index:9;
+}
+
+.inspection {
+  position: relative;
+  margin-right:auto;
+  margin-left:auto;
+  z-index:10;
+  height:150px;
+  width:450px;
+}
+
+#less:active {
+  position: relative;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  float:left;
+  background-color:#585858;
+}
+
+#less {
+  position: relative;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  float:left;
+  background-color:gray;
+}
+
+.more {
+  font-size:125px;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-right:auto;
+  margin-left:auto;
+  font-family: 'Rajdhani', sans-serif;
+  color:white;
+}
+
+#inspectiontime {
+  position: relative;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  float:left;
+
+}
+
+#waitsometime {
+  font-size:125px;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-right:auto;
+  margin-left:auto;
+  font-family: 'Rajdhani', sans-serif;
+  color:white;
+}
+
+#more:active {
+  position: relative;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  float:left;
+  background-color:#585858;
+}
+
+#more {
+  font
+  position: relative;
+  top: 0;
+  width: 150px;
+  height: 150px;
+  float:left;
+  background-color:gray;
+}
+
+.less {
+  font-size:125px;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-right:auto;
+  margin-left:15px;
+  font-family: 'Rajdhani', sans-serif;
+  color:white;
+}
+
+#tiempo {
+  position:relative;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 80px;
+  font-family: 'Droid Sans Mono', monospace;
+  font-weight: 300;
+}
+
+.timerposition {
+  margin-left:auto;
+  margin-right:auto;
+}
+/* ©Javi */
