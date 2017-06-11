@@ -8,6 +8,12 @@
   <link href="timer.css" rel="stylesheet">
   <link href="/style.css" rel="stylesheet">
   <link href="/layout.css" rel="stylesheet">
+  <script type="text/javascript">
+	function setup() {
+		var P = "©Javi " + year();
+		document.getElementById("c").innerHTML = P;
+	}
+	</script>
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -54,5 +60,6 @@
     <p></p>
     <a style="background-color: #4000FF; font-size: 25px;" href="/Timer" class="pressed">Timer</a>
   </div>
+  <div id="c" class="cp"></div>
 </body>
 </html>
