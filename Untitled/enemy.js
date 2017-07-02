@@ -62,6 +62,8 @@ function Boss() {
 
 function Zombie() {
 	this.x = round(random(100, width - 100));
+	this.live = 1;
+	this.livebar = 20 / this.live
 	this.plus = true;
 	this.za = -5;
 	this.zb = 5;
@@ -72,6 +74,10 @@ function Zombie() {
 	}
 	this.display = function() {
 		zom(this.x, this.y, this.dir, this.za, this.zb);
+		fill(0);
+		rect(this.x - 10, this.y - 50, 20, 4);
+		fill(255)
+		rect(this.x - 10, this.y - 50, this.live * this.livebar, 4);
 	};
 	this.move = function() {
 		if (px > this.x) {

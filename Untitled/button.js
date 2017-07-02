@@ -21,7 +21,7 @@ function button() {
 }
 
 function reset() {
-	px = 100,
+	var px = 100,
 	py = 100,
 	a = 5,
 	b = -5,
@@ -37,11 +37,13 @@ function reset() {
 	reloady = 20,
 	ammo = {
 		ingun: 8,
-		total: 40
+		total: 40,
+		dam: 0.75
 	},
-	akammo = {
+	bigammo = {
 		ingun: 0,
-		total: 0
+		total: 0,
+		dam: 0.5
 	},
 	gun = true,
 	bag = [],
@@ -50,7 +52,10 @@ function reset() {
 	invencible = 255,
 	howmanybosses = 0,
 	room = 0,
-	money = 0;
+	money = 0,
+	biggun = 0,
+	smallgun = 1,
+	waitrevolver = 100;
 	bag.push(new Bag());
 	bag[0].x = 10000;
 	bag[0].y = 10000;

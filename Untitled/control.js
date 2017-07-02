@@ -1,9 +1,16 @@
 function keyPressed() {
 	if (keyCode === 32 && room != 1) {
-		if (gun == true) {
+		if (gun == true && smallgun == 1) {
 			if (ammo.ingun > 0) {
 				shot.push(new Shot());
 				ammo.ingun--;
+			}
+		}
+		if (gun == true && smallgun == 2) {
+			if (ammo.ingun > 0 && waitrevolver > 30) {
+				shot.push(new Shot());
+				ammo.ingun--;
+				waitrevolver = 0;
 			}
 		}
 	}
@@ -11,43 +18,11 @@ function keyPressed() {
 		buy();
 	}
 	if (key == 'r' || key == 'R' || ammo.ingun < 1 && gun == true && wait > 100) {
-		reloadgun();
+		reloadsmall();
 		wait = 0;
 	}
 	if (key == '1') gun = true;
 	if (key == '2') gun = false;
-}
-
-function reloadgun() {
-	if (wait == 75 && ammo.total > 0) {
-		var left = ammo.ingun;
-		ammo.ingun = 8;
-		ammo.total -= 8;
-		ammo.total += left;
-		if (ammo.total < 8) {
-			ammo.ingun += ammo.total
-			if (ammo.ingun > 8) {
-				ammo.total = ammo.ingun - 8;
-				ammo.ingun = 8;
-			}
-		}
-	}
-}
-
-function reloadak() {
-	if (wait == 75 && akammo.total > 0) {
-		var left = akammo.ingun;
-		akammo.ingun = 31;
-		akammo.total -= 31;
-		akammo.total += left;
-		if (akammo.total < 31) {
-			akammo.ingun += akammo.total
-			if (akammo.ingun > 31) {
-				akammo.total = akammo.ingun - 31;
-				akammo.ingun = 31;
-			}
-		}
-	}
 }
 
 function playermove() {
@@ -107,12 +82,12 @@ function playershoot() {
 	wait++;
 	auto++;
 	if (keyIsDown(32) && room != 1) {
-		if ( /**/ gun === false && auto > 10 && akammo.ingun > 0) {
+		if (gun === false && auto > 10 && bigammo.ingun > 0) {
 			auto = 0;
 			shot.push(new Shot());
-			akammo.ingun--;
-			if (akammo.ingun < 1 && gun == false) {
-				reloadak();
+			bigammo.ingun--;
+			if (bigammo.ingun < 1 && gun == false) {
+				reloadbig();
 				wait = 0;
 			}
 		}

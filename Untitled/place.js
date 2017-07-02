@@ -96,29 +96,66 @@ function shop() {
 	head(width/2,225);
 	gunammobag(width/2-75-6,215);
 	akammobag(width/2+75-6,215);
+	revolver1(width/2-150-8,220);
+	gun1(width/2-225,220);
+	ak1(width/2+140,220);
 	fill(100,0,0);
 	stroke(0);
 	rect(width/2-25,250,50,25);
 	rect(width/2-75-25,250,50,25);
 	rect(width/2+75-25,250,50,25);
+	rect(width/2+150-25,250,50,25);
+	//para futura compra: rect(width/2+225-25,250,50,25);
+	rect(width/2-150-25,250,50,25);
+	rect(width/2-225-25,250,50,25);
 	textSize(10);
 	fill(255);
 	text("500$",width/2-11,245);
 	text("100$",width/2-85,245);
 	text("200$",width/2+65,245);
+	text("400$",width/2-150-8,245);
+	text("300$",width/2-225-8,245);
+	text("400$",width/2+140-3,245);
 }
 
 function buy() {
-	if (px > width/2-25 && px < width/2+25 && py > 200 && py < 300) {
+	if (px > width/2-25 && px < width/2+25 && py > 200 && py < 300 && money > 499) {
 		vida++;
 		money-=500;
 	}
-	if (px > width/2-100 && px < width/2-50 && py > 200 && py < 300) {
-		ammo.total+=8;
+	if (px > width/2-100 && px < width/2-50 && py > 200 && py < 300 && money > 99) {
+		ammo.total+=20;
 		money-=100;
 	}
-	if (px > width/2+50 && px < width/2+100 && py > 200 && py < 300) {
-		akammo.total+=31;
+	if (px > width/2+50 && px < width/2+100 && py > 200 && py < 300 && money > 199) {
+		bigammo.total+=31;
 		money-=200;
+	}
+	if (px > width/2-175 && px < width/2-125 && py > 200 && py < 300 && money > 499 && smallgun != 2) {
+		 ammo = {
+	 			ingun: 6,
+	 			total: 30,
+	 			dam: 1.25
+		}
+		smallgun = 2;
+		money-=500;
+	}
+	if (px > width/2-250 && px < width/2-200 && py > 200 && py < 300 && money > 399 && smallgun != 1) {
+		ammo = {
+			ingun: 8,
+			total: 40,
+			dam: 0.75
+		},
+		smallgun = 1;
+		money-=400;
+	}
+	if (px > width/2+150 && px < width/2+200 && py > 200 && py < 300 && money > 399 && biggun != 1) {
+		bigammo = {
+			ingun: 31,
+			total: 62,
+			dam: 0.5
+		},
+		biggun = 1;
+		money-=400;
 	}
 }

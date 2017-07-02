@@ -14,11 +14,13 @@ reloadx = 23,
 reloady = 20,
 ammo = {
 	ingun: 8,
-	total: 40
+	total: 40,
+	dam: 0.75
 },
-akammo = {
+bigammo = {
 	ingun: 0,
-	total: 0
+	total: 0,
+	dam: 0.5
 },
 gun = true,
 bag = [],
@@ -27,7 +29,10 @@ next = 0,
 invencible = 255,
 howmanybosses = 0,
 room = 0,
-money = 0;
+money = 0,
+biggun = 0,
+smallgun = 1,
+waitrevolver = 100;
 
 function setup() {
 	createCanvas(800, 600);
@@ -41,9 +46,10 @@ function draw() {
 		}
 		invencible++;
 		player(px, py, look, 1, 0);
-		reloadgun();
-		reloadak();
+		reloadsmall();
+		reloadbig();
 		HUD();
+		waitrevolver++;
 		playermove();
 		playershoot();
 		classloop();
