@@ -16,14 +16,15 @@ function classloop() {
     boss[i6].display();
     boss[i6].die();
   }
-
-  for (var i4 = bag.length - 1; i4 > -1; i4--) {
-    bag[i4].display();
-    for (var i5 = bag.length - 1; i5 > -1; i5--) {
-      if (px < bag[i5].x + 20 && px > bag[i5].x - 20 && py < bag[i5].y + 20 && py > bag[i5].y - 50) {
-        money += bag[i5].dollars;
-        i4--;
-        bag.splice(i5, 1);
+  if (room == 0) {
+    for (var i4 = bag.length - 1; i4 > -1; i4--) {
+      bag[i4].display();
+      for (var i5 = bag.length - 1; i5 > -1; i5--) {
+        if (px < bag[i5].x + 20 && px > bag[i5].x - 20 && py < bag[i5].y + 20 && py > bag[i5].y - 50) {
+          money += bag[i5].dollars;
+          i4--;
+          bag.splice(i5, 1);
+        }
       }
     }
   }
