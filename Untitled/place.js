@@ -73,7 +73,7 @@ function lugar() {
 			rect(width/2 - 100, 75, 200, 25);
 		}
 		//get in shop
-		if (px < width/2 + 100 && px > width/2 - 100 && py < 75) {
+		if (px < width/2 + 100 && px > width/2 - 100 && py < 75 && next == 0) {
 			room = 1;
 			py = height - 150;
 		}
