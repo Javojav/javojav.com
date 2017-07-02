@@ -131,14 +131,14 @@ function buy() {
 		bigammo.total+=31;
 		money-=200;
 	}
-	if (px > width/2-175 && px < width/2-125 && py > 200 && py < 300 && money > 499 && smallgun != 2) {
+	if (px > width/2-175 && px < width/2-125 && py > 200 && py < 300 && money > 399 && smallgun != 2) {
 		 ammo = {
 	 			ingun: 6,
 	 			total: 30,
 	 			dam: 1.25
 		}
 		smallgun = 2;
-		money-=500;
+		money-=400;
 	}
 	if (px > width/2-250 && px < width/2-200 && py > 200 && py < 300 && money > 399 && smallgun != 1) {
 		ammo = {
