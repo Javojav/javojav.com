@@ -21,8 +21,8 @@ function button() {
 }
 
 function reset() {
-	var px = 100,
-	py = 100,
+	px = 400,
+	py = 300,
 	a = 5,
 	b = -5,
 	plus = true,

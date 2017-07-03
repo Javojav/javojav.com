@@ -82,13 +82,15 @@ function playershoot() {
 	wait++;
 	auto++;
 	if (keyIsDown(32) && room != 1) {
-		if (gun === false && auto > 10 && bigammo.ingun > 0) {
-			auto = 0;
-			shot.push(new Shot());
-			bigammo.ingun--;
-			if (bigammo.ingun < 1 && gun == false) {
-				reloadbig();
-				wait = 0;
+		if ((biggun == 1 && auto > 10) || (biggun == 2 && auto > 3)) {
+			if (gun === false && bigammo.ingun > 0) {
+				auto = 0;
+				shot.push(new Shot());
+				bigammo.ingun--;
+				if (bigammo.ingun < 1 && gun == false) {
+					reloadbig();
+					wait = 0;
+				}
 			}
 		}
 	}

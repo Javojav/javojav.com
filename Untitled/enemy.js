@@ -1,5 +1,5 @@
 function Boss() {
-	this.x = round(random(100, width - 100));
+	this.x = round(random(300, width - 100));
 	this.live = 5;
 	this.livebar = 40 / this.live
 	this.plus = true;
@@ -61,7 +61,8 @@ function Boss() {
 }
 
 function Zombie() {
-	this.x = round(random(100, width - 100));
+	this.x = round(random(150, width - 100));
+	this.bagyesorno = random(1,10);
 	this.live = 1;
 	this.livebar = 20 / this.live
 	this.plus = true;
@@ -73,11 +74,11 @@ function Zombie() {
 		this.y = round(random(100, height - 100));
 	}
 	this.display = function() {
-		zom(this.x, this.y, this.dir, this.za, this.zb);
-		fill(0);
-		rect(this.x - 10, this.y - 50, 20, 4);
-		fill(255)
-		rect(this.x - 10, this.y - 50, this.live * this.livebar, 4);
+			zom(this.x, this.y, this.dir, this.za, this.zb);
+			fill(0);
+			rect(this.x - 10, this.y - 50, 20, 4);
+			fill(255)
+			rect(this.x - 10, this.y - 50, this.live * this.livebar, 4);
 	};
 	this.move = function() {
 		if (px > this.x) {

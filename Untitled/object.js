@@ -37,20 +37,18 @@ function Shot() {
 			if (this.x < zombie[i].x + 15 && this.x > zombie[i].x - 15 && this.y < zombie[i].y + 43 && this.y > zombie[i].y - 15) {
 				this.hit = 1;
 				if (gun == true) {
-					zombie[i].live-=ammo.dam;
+					if (ammo.dam < zombie[i].live) {
+						zombie[i].live-=ammo.dam;
+					} else {
+						zombie[i].live = 0;
+					}
 				}
 				if (gun == false) {
-					zombie[i].live-=bigammo.dam;
-				}
-			}
-			if (zombie[i].live < .1) {
-				var bagyesorno = random(9);
-				if (bagyesorno > 5) {
-					bag.push(new Bag());
-					bag[bag.length - 1].x = zombie[i].x;
-					bag[bag.length - 1].dollars = int(random(25,70));
-					bag[bag.length - 1].y = zombie[i].y;
-					zombie.splice(i, 1);
+					if (bigammo.dam < zombie[i].live) {
+						zombie[i].live-=bigammo.dam;
+					} else {
+						zombie[i].live = 0;
+					}
 				}
 			}
 		}
@@ -58,18 +56,19 @@ function Shot() {
 			if (this.x < boss[i2].x + 15 * 2 && this.x > boss[i2].x - 15 * 2 && this.y < boss[i2].y + 43 * 2 && this.y > boss[i2].y - 15 * 2) {
 				this.hit = 1;
 				if (gun == true) {
-					boss[i2].live-=ammo.dam;
+					if (ammo.dam < boss[i2].live) {
+						boss[i2].live-=ammo.dam;
+					} else {
+						boss[i2].live = 0;
+					}
 				}
 				if (gun == false) {
-					boss[i2].live-=bigammo.dam;
+					if (bigammo.dam < boss[i2].live) {
+						boss[i2].live-=bigammo.dam;
+					} else {
+						boss[i2].live = 0;
+					}
 				}
-			}
-			if (boss[i2].live < .1) {
-				bag.push(new Bag());
-				bag[bag.length - 1].dollars = int(random(100,350));
-				bag[bag.length - 1].x = boss[i2].x;
-				bag[bag.length - 1].y = boss[i2].y;
-				boss.splice(i2, 1);
 			}
 		}
 	};

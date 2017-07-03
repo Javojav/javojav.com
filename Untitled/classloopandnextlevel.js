@@ -35,7 +35,7 @@ function nextlevel() {
     next = 0;
   }
   if (next == 0) {
-    if (px < width - 75 && px > width - 100 && py > height / 2 - 100 && py < height / 2 + 100) {
+    if (px < width - 75 && px > width - 100 && py > height / 2 - 100 && py < height / 2 + 100 && room == 0) {
       level++;
       for (var ii = bag.length - 1; ii > -1; ii--) {
         bag.splice(ii, 1);
@@ -59,6 +59,30 @@ function nextlevel() {
     if (level == 5) {
       boss.push(new Boss())
       next = 2;
+    }
+  }
+}
+
+function zomdead() {
+  for (var i = 0; i < zombie.length; i++) {
+    if (zombie[i].live < .1) {
+      if (zombie[i].bagyesorno > 5) {
+        bag.push(new Bag());
+        bag[bag.length - 1].x = zombie[i].x;
+        bag[bag.length - 1].dollars = int(random(25,70));
+        bag[bag.length - 1].y = zombie[i].y;
+      }
+      zombie.splice(i, 1);
+    }
+  }
+
+  for (var i2 = 0; i2 < boss.length; i2++) {
+    if (boss[i2].live < .1) {
+      bag.push(new Bag());
+      bag[bag.length - 1].dollars = int(random(100,350));
+      bag[bag.length - 1].x = boss[i2].x;
+      bag[bag.length - 1].y = boss[i2].y;
+      boss.splice(i2, 1);
     }
   }
 }

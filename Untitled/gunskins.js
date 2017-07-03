@@ -63,3 +63,25 @@ function revolver2(x,y) {
   rect(x, y, -20, 1);
   strokeWeight(1);
 }
+
+function bigbig1(x,y) {
+  stroke(0);
+  strokeWeight(3);
+  fill(0);
+  rect(x, y + 5,35,1);
+  rect(x+25,y+5,2,-2)
+  ellipse(x+15,y+12,7)
+  rect(x,y+5,1,8);
+  strokeWeight(1);
+}
+
+function bigbig2(x,y) {
+  stroke(0);
+  strokeWeight(3);
+  fill(0);
+  rect(x, y + 5,-35,1);
+  rect(x-25,y+5,-2,-2)
+  ellipse(x-15,y+12,7)
+  rect(x,y+5,-1,8);
+  strokeWeight(1);
+}

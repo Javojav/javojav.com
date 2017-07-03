@@ -1,5 +1,5 @@
-var px = 100,
-py = 100,
+var px = 400,
+py = 300,
 a = 5,
 b = -5,
 plus = true,
@@ -52,6 +52,7 @@ function draw() {
 		waitrevolver++;
 		playermove();
 		playershoot();
+		zomdead();
 		classloop();
 		nextlevel();
 		if (a > 3) plus = false;
