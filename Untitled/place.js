@@ -162,7 +162,7 @@ function buy() {
 		smallgun = 1;
 		money-=400;
 	}
-	if (px > width/2+150 && px < width/2+200 && py > 200 && py < 300 && money > 399 && biggun != 1) {
+	if (px > width/2+125 && px < width/2+175 && py > 200 && py < 300 && money > 399 && biggun != 1) {
 		bigammo = {
 			ingun: 31,
 			total: 62,
