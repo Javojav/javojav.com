@@ -6,6 +6,7 @@
 	<title>Pong</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.8/addons/p5.dom.js" type="text/javascript"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="sketch.js" type="text/javascript"></script>
 	<link href="/style.css" rel="stylesheet">
 	<link href="/layout.css" rel="stylesheet">
@@ -34,31 +35,11 @@
 	</div>
 	<div class="activeblock"></div>
 	<span class="button">	</span>
-	<div class="show">
-		<a style="background-color: #2E2E2E; font-size: 25px;" href="/">javojav.me</a>
-		<p></p>
-		<a style="background-color: #610655; font-size: 25px" href="/Untitled">Untitled</a>
-		<p></p>
-		<a style="background-color: red; font-size: 25px;" href="/pong" class="pressed">Pong</a>
-		<p></p>
-		<a style="background-color: orange; font-size: 25px" href="/Snake">Snake</a>
-		<p></p>
-		<a style="background-color: green; font-size: 25px" href="/SpaceInvaders">Space Invaders</a>
-		<p></p>
-		<a style="background-color: brown; font-size: 25px" href="/BrickBreaker">Brick Breaker</a>
-		<p></p>
-		<a style="background-color: LightBlue; font-size: 25px;" href="/bob">Bob</a>
-		<p></p>
-		<a style="background-color: #E1CA00; font-size: 25px" href="/Bubbles">Bubbles</a>
-		<p></p>
-		<a style="background-color: #E111B8; font-size: 22px;" href="/Anlage">Anlagenmanipulierer</a>
-		<p></p>
-		<a style="background-color: #5b6533; font-size: 25px;" href="/TI-Basic">TI-Basic</a>
-		<p></p>
-		<a style="background-color: #4000FF; font-size: 25px;" href="/Timer">Timer</a>
-		<p></p>
-		<a style="background-color: #8B4513; font-size: 25px;" href="http://guassa.github.io">Guassa</a>
-	</div>
+	<script>
+	$(function() {
+	$("#links").load("links.txt #all");
+	});
+	</script>
 
 
 </body>

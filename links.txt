@@ -1,0 +1,45 @@
+<a id="all" style="background-color: #2E2E2E; font-size:25px;" href="/">javojav.me</a>
+<p id="all"></p>
+<a id="all" style="background-color: #610655; font-size:25px;" href="/Untitled">Untitled</a>
+<p id="all"></p>
+<a id="all" style="background-color: red; font-size:25px;" href="/pong">Pong</a>
+<p id="all"></p>
+<a id="all" style="background-color: orange; font-size:25px;" href="/Snake">Snake</a>
+<p id="all"></p>
+<a id="all" style="background-color: green; font-size:25px;" href="/SpaceInvaders">Space Invaders</a>
+<p id="all"></p>
+<a id="all" style="background-color: brown; font-size:25px;" href="/BrickBreaker">Brick Breaker</a>
+<p id="all"></p>
+<a id="all" style="background-color: LightBlue; font-size:25px;" href="/bob">Bob</a>
+<p id="all"></p>
+<a id="all" style="background-color: #E1CA00; font-size:25px;" href="/Bubbles">Bubbles</a>
+<p id="all"></p>
+<a id="all" style="background-color: #E111B8; font-size:22px;" href="/Anlage">Anlagenmanipulierer</a>
+<p id="all"></p>
+<a id="all" style="background-color: #5b6533; font-size:25px;" href="/TI-Basic">TI-Basic</a>
+<p id="all"></p>
+<a id="all" style="background-color: #4000FF; font-size:25px;" href="/Timer">Timer</a>
+<p id="all"></p>
+<a id="all" style="background-color: #8B4513; font-size:25px;" href="http://guassa.github.io">Guassa</a>
+
+<a id="main" style="background-color: #610655; " href="/Untitled">Untitled</a>
+<p id="main"></p>
+<a id="main" style="background-color: red; " href="/pong">Pong</a>
+<p id="main"></p>
+<a id="main" style="background-color: orange; " href="/Snake">Snake</a>
+<p id="main"></p>
+<a id="main" style="background-color: green; " href="/SpaceInvaders">Space Invaders</a>
+<p id="main"></p>
+<a id="main" style="background-color: brown; " href="/BrickBreaker">Brick Breaker</a>
+<p id="main"></p>
+<a id="main" style="background-color: LightBlue; " href="/bob">Bob</a>
+<p id="main"></p>
+<a id="main" style="background-color: #E1CA00; " href="/Bubbles">Bubbles</a>
+<p id="main"></p>
+<a id="main" style="background-color: #E111B8;" href="/Anlage">Anlagenmanipulierer</a>
+<p id="main"></p>
+<a id="main" style="background-color: #5b6533; " href="/TI-Basic">TI-Basic</a>
+<p id="main"></p>
+<a id="main" style="background-color: #4000FF; " href="/Timer">Timer</a>
+<p id="main"></p>
+<a id="main" style="background-color: #8B4513; " href="http://guassa.github.io">Guassa</a>

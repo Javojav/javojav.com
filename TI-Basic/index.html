@@ -6,6 +6,7 @@
 	<title>TI-Basic</title>
 	<link href="/style.css" rel="stylesheet">
 	<link href="/layout.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript">
 		function setup() {
 			var P = "©Javi " + year();
@@ -41,29 +42,13 @@
 	</div>
 	<div class="activeblock"></div>
 	<span class="button">	</span>
-	<div class="show">
-		<a style="background-color: #2E2E2E; font-size: 25px;" href="/">javojav.me</a>
-		<p></p>
-		<a style="background-color: #610655; font-size: 25px;" href="/Untitled">Untitled</a>
-		<p></p>
-		<a style="background-color: red; font-size: 25px;" href="/pong">Pong</a>
-		<p></p>
-		<a style="background-color: orange; font-size: 25px" href="/Snake">Snake</a>
-		<p></p>
-		<a style="background-color: green; font-size: 25px" href="/SpaceInvaders">Space Invaders</a>
-		<p></p>
-		<a style="background-color: brown; font-size: 25px" href="/BrickBreaker">Brick Breaker</a>
-		<p></p>
-		<a style="background-color: LightBlue; font-size: 25px;" href="/bob">Bob</a>
-		<p></p>
-		<a style="background-color: #E111B8; font-size: 22px;" href="/Anlage">Anlagenmanipulierer</a>
-		<p></p>
-		<a style="background-color: #5b6533; font-size: 25px;" href="/TI-Basic" class="pressed">TI-Basic</a>
-		<p></p>
-		<a style="background-color: #4000FF; font-size: 25px;" href="/Timer">Timer</a>
-		<p></p>
-		<a style="background-color: #8B4513; font-size: 25px;" href="http://guassa.github.io">Guassa</a>
-	</div>
+	<div class="show" id="links"></div>
+
+	<script>
+	$(function() {
+	$("#links").load("links.txt #all");
+	});
+	</script>
 
 </body>
 <!--No copies Miguel eh pillín-->
