@@ -33,6 +33,7 @@ span.button:active + div.show {
 	left: 0%;
 	width: 200px;
 	height: 90%;
+	overflow:scroll;
 	background-color: gray;
 	display: block;
 }
@@ -48,6 +49,7 @@ div.show:hover {
 	left: 0%;
 	width: 200px;
 	height: 90%;
+	overflow:scroll;
 	background-color: gray;
 	display: block;
 }
