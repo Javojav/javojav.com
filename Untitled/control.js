@@ -2,15 +2,24 @@ function keyPressed() {
 	if (keyCode === 32 && room != 1) {
 		if (gun == true && smallgun == 1) {
 			if (ammo.ingun > 0) {
-				shot.push(new Shot());
+				shot.push(new Shot(0, 0));
 				ammo.ingun--;
 			}
 		}
 		if (gun == true && smallgun == 2) {
 			if (ammo.ingun > 0 && waitrevolver > 30) {
-				shot.push(new Shot());
+				shot.push(new Shot(0, 0));
 				ammo.ingun--;
 				waitrevolver = 0;
+			}
+		}
+
+		if (gun == true && smallgun == 3) {
+			if (ammo.ingun > 0) {
+				for (let i = 0; i < 3; i++) {
+					shot.push(new Shot(2, i));
+					ammo.ingun--;
+				}
 			}
 		}
 	}
@@ -82,10 +91,17 @@ function playershoot() {
 	wait++;
 	auto++;
 	if (keyIsDown(32) && room != 1) {
-		if ((biggun == 1 && auto > 10) || (biggun == 2 && auto > 3)) {
+		if ((biggun == 1 && auto > 10) || (biggun == 2 && auto > 3) || (biggun == 3 && auto > 100)) {
 			if (gun === false && bigammo.ingun > 0) {
 				auto = 0;
-				shot.push(new Shot());
+				if (biggun != 3) {
+					shot.push(new Shot(0, 0));
+				}	else {
+					for (let i = 0; i < 5; i++) {
+						shot.push(new Shot(3, i));
+					}
+					autoreloadgun3 = false;
+				}
 				bigammo.ingun--;
 				if (bigammo.ingun < 1 && gun == false) {
 					reloadbig();

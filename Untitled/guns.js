@@ -27,7 +27,7 @@ function reloadbig() {
       }
     }
   }
-  
+
   if (biggun == 2) {
     if (wait == 150 && bigammo.total > 0) {
       var left = bigammo.ingun;
@@ -42,6 +42,22 @@ function reloadbig() {
         }
       }
     }
+  }
+
+  if (biggun == 3) {
+    if (wait == 30 && bigammo.total > 0) {
+      autoreloadgun3 = true;
+    }
+  }
+}
+
+function autoreloadbiggun3() {
+  if (bigammo.ingun < 8 && autoreloadgun3 == true) {
+    bigammo.ingun++;
+    bigammo.total--;
+    wait = 0;
+  } else {
+    autoreloadgun3 = false;
   }
 }
 
@@ -85,6 +101,21 @@ function reloadsmall() {
         if (ammo.ingun > 6) {
           ammo.total = ammo.ingun - 6;
           ammo.ingun = 6;
+        }
+      }
+    }
+  }
+  if (smallgun == 3) {
+    if (wait == 75 && ammo.total > 0) {
+      var left = ammo.ingun;
+      ammo.ingun = 12;
+      ammo.total -= 12;
+      ammo.total += left;
+      if (ammo.total < 12) {
+        ammo.ingun += ammo.total
+        if (ammo.ingun > 12) {
+          ammo.total = ammo.ingun - 12;
+          ammo.ingun = 12;
         }
       }
     }

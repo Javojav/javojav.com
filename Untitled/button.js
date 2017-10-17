@@ -21,11 +21,12 @@ function button() {
 }
 
 function reset() {
-	px = 400,
+ 	px = 400,
 	py = 300,
 	a = 5,
 	b = -5,
 	plus = true,
+	autoreloadgun3 = false,
 	shot = [],
 	zombie = [],
 	boss = [],

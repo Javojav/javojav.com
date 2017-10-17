@@ -35,6 +35,9 @@ function player(px, py, l, movelegs, other) {
 			if (smallgun == 2) {
 				revolver1(px+10,py+15);
 			}
+			if (smallgun == 3) {
+				gunwithnoname1(px+10,py+20);
+			}
 			strokeWeight(3);
 		}
 		if (gun == false) {
@@ -43,6 +46,9 @@ function player(px, py, l, movelegs, other) {
 			}
 			if (biggun == 2) {
 				bigbig1(px+10,py+13);
+			}
+			if (biggun == 3) {
+				shotgun1(px+10,py+13);
 			}
 			strokeWeight(3);
 		}
@@ -75,6 +81,9 @@ function player(px, py, l, movelegs, other) {
 			if (smallgun == 2) {
 				revolver2(px-10,py+15);
 			}
+			if (smallgun == 3) {
+				gunwithnoname2(px-10,py+20);
+			}
 			strokeWeight(3);
 		}
 		if (gun == false) {
@@ -83,6 +92,9 @@ function player(px, py, l, movelegs, other) {
 			}
 			if (biggun == 2) {
 				bigbig2(px-10,py+13);
+			}
+			if (biggun == 3) {
+				shotgun2(px-10,py+13);
 			}
 			strokeWeight(3);
 		}

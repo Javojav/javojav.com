@@ -3,6 +3,7 @@ py = 300,
 a = 5,
 b = -5,
 plus = true,
+autoreloadgun3 = false,
 shot = [],
 zombie = [],
 boss = [],
@@ -55,6 +56,7 @@ function draw() {
 		zomdead();
 		classloop();
 		nextlevel();
+		if (biggun == 3 && autoreloadgun3 == true && wait > 50) autoreloadbiggun3();
 		if (a > 3) plus = false;
 		if (a < -3) plus = true;
 	}
