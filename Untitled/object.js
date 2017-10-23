@@ -24,7 +24,7 @@ function Shot(guna, numberofi) {
 		if (guna == 2 && numberofi == 1) {
 			this.diry--;
 		}
-		if (guan == 2 && numberofi == 2) {
+		if (guna == 2 && numberofi == 2) {
 			this.diry-=2;
 		}
 	}
