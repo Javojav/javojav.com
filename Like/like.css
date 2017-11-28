@@ -1,0 +1,93 @@
+.likebutton {
+  margin: 0px;
+  font-size: 500px;
+  color: red;
+  height:500px;
+  -webkit-user-select: none;
+}
+
+.likebutton:active {
+  margin: 0px;
+  font-size: 500px;
+  height:500px;
+  color: darkred;
+  -webkit-user-select: none;
+}
+
+.likediv {
+  width:500px;
+  height:500px;
+  margin:auto;
+}
+
+#likenumber {
+  margin:0px;
+  color:white;
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.writecomments {
+  width:60%;
+  height:70px;
+  margin:auto;
+  margin-top:100px;
+}
+
+#yourname {
+  width:30%;
+  font-size: 20px;
+  margin-top: 2px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+#commenttext {
+  width:99%;
+  font-size: 20px;
+  margin-top: 2px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.sub {
+  width:20%;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-left:2px;
+  font-family: 'Rajdhani', sans-serif;
+  float: right;
+}
+
+.commentbox {
+  width:60%;
+  margin:auto;
+}
+
+.comment {
+  width:100%;
+  margin-right:auto;
+  margin-top:50px;
+}
+
+.name {
+  font-family: 'Rajdhani', sans-serif;
+  font-size:22px;
+  color:white;
+  font-weight: 900;
+  margin:5px;
+}
+
+.deit {
+  font-family: 'Rajdhani', sans-serif;
+  font-size:10px;
+  color:white;
+  font-weight: 900;
+  margin:5px;
+  float: right;
+}
+
+.text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size:19px;
+  color:white;
+  margin:5px;
+}

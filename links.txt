@@ -23,6 +23,8 @@
 <a id="all" style="background-color: #8B4513; font-size:25px;" href="http://guassa.javojav.me">Guassa</a>
 <p id="all"></p>
 <a id="all" style="background-color: #0FDADA; font-size:25px;" href="http://partyhard.javojav.me">Party Hard</a>
+<p id="all"></p>
+<a id="all" style="background-color: #C70039; font-size:25px;" href="/Like">Like</a>
 
 <a id="main" style="background-color: #610655; " href="/Untitled">Untitled</a>
 <p id="main"></p>
@@ -47,3 +49,5 @@
 <a id="main" style="background-color: #8B4513; " href="http://guassa.javojav.me">Guassa</a>
 <p id="main"></p>
 <a id="main" style="background-color: #0FDADA; " href="http://partyhard.javojav.me">Party Hard</a>
+<p id="main"></p>
+<a id="main" style="background-color: #C70039; " href="/Like">Like</a>
