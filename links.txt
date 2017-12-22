@@ -48,4 +48,6 @@
 <p id="main"></p>
 <a id="main" style="background-color: #8B4513; " href="http://guassa.javojav.me">Guassa</a>
 <p id="main"></p>
+<a id="main" style="background-color: #0FDADA; " href="http://partyhard.javojav.me">Party Hard</a>
+<p id="main"></p>
 <a id="main" style="background-color: #C70039; " href="/Like">Like</a>
