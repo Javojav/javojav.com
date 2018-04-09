@@ -1,4 +1,4 @@
-<a id="all" style="background-color: #2E2E2E; font-size:25px;" href="/">javojav.me</a>
+<a id="all" style="background-color: #2E2E2E; font-size:25px;" href="/">javojav.com</a>
 <p id="all"></p>
 <a id="all" style="background-color: #610655; font-size:25px;" href="/Untitled">Untitled</a>
 <p id="all"></p>
@@ -20,9 +20,9 @@
 <p id="all"></p>
 <a id="all" style="background-color: #4000FF; font-size:25px;" href="/Timer">Timer</a>
 <p id="all"></p>
-<a id="all" style="background-color: #8B4513; font-size:25px;" href="http://guassa.javojav.me">Guassa</a>
+<a id="all" style="background-color: #8B4513; font-size:25px;" href="http://guassa.javojav.com">Guassa</a>
 <p id="all"></p>
-<a id="all" style="background-color: #0FDADA; font-size:25px;" href="http://partyhard.javojav.me">Party Hard</a>
+<a id="all" style="background-color: #0FDADA; font-size:25px;" href="http://partyhard.javojav.com">Party Hard</a>
 <p id="all"></p>
 <a id="all" style="background-color: #C70039; font-size:25px;" href="/Like">Like</a>
 
@@ -46,8 +46,8 @@
 <p id="main"></p>
 <a id="main" style="background-color: #4000FF; " href="/Timer">Timer</a>
 <p id="main"></p>
-<a id="main" style="background-color: #8B4513; " href="http://guassa.javojav.me">Guassa</a>
+<a id="main" style="background-color: #8B4513; " href="http://guassa.javojav.com">Guassa</a>
 <p id="main"></p>
-<a id="main" style="background-color: #0FDADA; " href="http://partyhard.javojav.me">Party Hard</a>
+<a id="main" style="background-color: #0FDADA; " href="http://partyhard.javojav.com">Party Hard</a>
 <p id="main"></p>
 <a id="main" style="background-color: #C70039; " href="/Like">Like</a>
