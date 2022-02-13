@@ -25,6 +25,8 @@
 <a id="all" style="background-color: #0FDADA; font-size:25px;" href="http://partyhard.javojav.com">Party Hard</a>
 <p id="all"></p>
 <a id="all" style="background-color: #C70039; font-size:25px;" href="/Like">Like</a>
+<p id="all"></p>
+<a id="all" style="background-color: #9300ff; font-size:25px;" href="/Hanoi">Hanoi</a>
 
 <a id="main" style="background-color: #610655; " href="/Untitled">Untitled</a>
 <p id="main"></p>
@@ -51,3 +53,5 @@
 <a id="main" style="background-color: #0FDADA; " href="http://partyhard.javojav.com">Party Hard</a>
 <p id="main"></p>
 <a id="main" style="background-color: #C70039; " href="/Like">Like</a>
+<p id="main"></p>
+<a id="main" style="background-color: #9300ff; " href="/Hanoi">Hanoi</a>
