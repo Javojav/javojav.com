@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js" type="text/javascript"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <p>Discos: </p>
+        <p id="cantidadDiscos">3</p>
+        <input type="range" min="1" max="20" value="3" step="1" id="discos" oninput="reset()">
+        <button onclick="towers.move(0)">1</button>
+        <button onclick="towers.move(1)">2</button>
+        <button onclick="towers.move(2)">3</button>
+        <button onclick="towers.select('Left')">&larr;</button>
+        <button onclick="towers.select('Right')">&rarr;</button>
+        <p>Se pueden usar los botones 1, 2, 3 para colocar y las flechas para seleccionar</p>
+    </body>
+</html>
